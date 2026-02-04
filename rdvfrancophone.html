@@ -1,44 +1,139 @@
 <!DOCTYPE html>
 <html>
+<script>
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
     <head>
        <link rel="stylesheet" href="style.css" media="all">
        <script src="MainJavascript.js" async></script>
 </head>
         <title>
-            <h1> Page under construction</h1>
-            Rendez-vous francophone
+            Rendez-vous francophone a Heidelberg
         </title>
     </head>
-    <body>
+    <body style="background-color:powderblue;">
         <p>
-            <h1> Page under construction</h1>
-            <h1 style="color:blue;" align="center"> Rendez-vous francophone</h1>
+            <h1>Page under construction</h1>
 <br>
-            <h3 style="color:green;"align="center">Rendez-vous des francophones a Heidelberg</h3>
+            <h1 style="color:blue;" align="center">RENDEZ-VOUS</h1>    <h1 style="color:white;" align="center">FRANCOPHONE</h1>      <h1 style="color:red;" align="center">HEIDELBERG</h1>
 <br>
+            <h2 style="color:black;"align="center">Combinez <b>la pratique du francais avec la discussion de themes culturels et faites vous des amis !!!</b></h2>
+
         </p>
 
 <br>
+
+
+<img  align="center"src=".\FotoHeidelberg.jpeg" alt="" width="30%" height="30%">
+
 <br>
+<br>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Presentation')">Presentation</button>
+  <button class="tablinks" onclick="openTab(event, 'About me')">A mon sujet</button>
+  <button class="tablinks" onclick="openTab(event, 'Our Rules')">Nos regles</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+</div>
 
-<img src=".\FotoHeidelberg.jpeg" alt="" width="30%" height="30%">
+
+
+
+
+<div id="Presentation" class="tabcontent" style="display:block">
+<h3 style="color:blue;"> Presentation:</h3>
+<p>Nous sommes un groupe <b>international</b> agés de 20 a 60 ans qui se rencontre une fois tous les 2 mois pour parler <b>francais.</b></p>
+<p>Une personne présente un sujet de son choix (culture, histoire d un pays) et nous en discutons. Apres, nous bavardons ensemble sur tout ce qu'on veut. <b>Ambiance tres familiale</b>.</p>
+<p> La plupart du temps, nous nous rencontrons dans un <b>café de Heidelberg</b> le week-end. </p>
+<p>Le niveau de francais est assez different, donc nous parlons<b> lentement et clairement</b>.</p>
+<p>Nous faisons partie de l'association Origen e.V.. </p>
+<p>Cette rencontre est gratuite. Vous payez seulement ce que vous commandez au café. Cependant, nous invitons les persones qui ne sont pas Membre de Origen e.v. a faire une <b>petite donnation</b> (par example 2 EURO / person) pour couvrir nos frais. 
+<p>Donc, essayez de venir simplement. C est pas compliqué et c est fun.</b></p>
+<p>Il s'agit ici de pur volontariat. (non profit organisation) </p>
+
+<h3 style="color:red;"> Nous invitons particulairement les persones francophones <b>d'Afrique, Asie-Pacifique et Ameriques</b> a se joindre a nous et nous parler de leur culture et histoire.</h3>
+</p>
+</div>
+
+
+
+
+<div id="About me" class="tabcontent" style="display:none">
+<h3 style="color:blue;">A mon sujet</h3>
+<p>Je m'appelle <b>Cyril Dechamps</b>. Je suis un ingenieur franco-allemand et je travaille dans une compagnie internationale. 
+<p> J'ai 55 ans. J'organise des events depuis que j'ai 20 ans. Je fais partie d'une famille internationale.  </p>
+<p> Je parle <b>anglais, francais (langue maternelle) , allemand, espagnol et japonais.</b> J'ai une chienne extraordinaire qui s'appelle Panda qui m'accompagne partout. </p>
+<p> Mes loisirs sont le vélo, la rando, natation, peinture, regarder le foot, vélo, rugby a la TV, la musique des années 80 et le Karaoké. </p>
+<p> Je m'engage dans le volontariat et j'adore les projets et activités entre amis, surtout dans une ambiance internationale. 
+<p> Donc, n'hésitez pas a me contacter. </p>
+<br>
+<p><i>Panda !!!</i></p>
+<img  align="center"src=".\FotoPanda.jpg" alt="" width="30%" height="30%">
+</div>
+
+
+
+<div id="Our Rules" class="tabcontent" style="display:none">
+<br>
+<h3 style="color:blue;">Nos regles:</h3>
+
+<p>
+Avec votre inscription ou participation, vous <b>acceptez nos regles</b>. Nous nous reservons le droit d'exclure toute persone ne les respectant pas ou agissant contre l'interet de ce groupe.</p>
+
+<p>- Traitez tous les participants<b> avec respect </b>quelque soit sa race, sexe, nationalite, orientation sexuelle ou autre caractéristique...</p>
+<p>- Ne prenez pas de <b>photos</b> d'autres persones sans leur consentement.</p>
+<p>- Ne <b>postez</b> pas de photos de notre rencontre en ligne ou sur les réseaux sociaux.</p>
+<p>- <b>évitez d'annuler</b> au dernier moment a moins que vous ayez une vrai urgence ou vous etes malade.</p>
+<p>- Ne participez pas si vous etes  <b>malade</b>.</p>
+<p>- Pour des raisons d'organisation, nous avons un nombre de places limité.</p>
+<p>
+Important: Notre communaute n'assume <b>aucune responsabilité</b> en cas d'accident ou de domages.</b>.
+Vous devez avoir votre propre assurance maladie/accident et responsabilité civile (Krankenversicherung and Haftpflichversicherung) et elles doivent etre valables en Allemagne. <b>La participation est a vos risques et périls, toutes les lois allemandes doivent etre respectées</b>.</p>
+</div>
+
+
+
 
 <br>
+<div id="Contact" class="tabcontent" style="display:none">
+<h3 style="color:blue;">Contact:</h3>
+<p>Si vous voulez vous incrire ou avez une question, n'hesitez pas a nous ecrire. Nous repondons rapidement</p>
+<p>Email: <b>outdoor.heidelberg@gmail.com</b></p>
+<p>Nous n'utilisons votre adresse email que pour vous repondre. Nous ne la sauvegardons en aucun cas pour d'autres usages.  Si vous souhaitez que nous l'effacions de notre boite a mail, ecrivez nous un message, nous l'effacons immediatement.</p>
+</div>
+
+
+
+
+
 <br>
-<br>
-&nbsp;
-&nbsp;
-&nbsp;
-
-<p><i><b>Disclaimer:</b>
-    We provide links and information for general interest only. We have no control over external content and are not responsible for any information or links provided on external sites. 
-    Use at your own discretion. 
-    We make no guarantees that all information is up-to-date or accurate. Users should verify details independently. We are not liable for any outdated or incorrect information. </i></p>
+<p><i><h3>Disclaimer:</h3>
+    Les liens et informations que nous mentionnons sont uniquement a l'usage de l'interet general. Nous n'avons aucun controle sur les contenus externes et ne sommes pas responsable pour les informations ou liens de sites exterieurs. Utilisez-la a vos propres risques et perils. Nous ne garantissons pas que toutes les informations soient actualisées ou adequates. Les utilisateurs doivent verifier les details independament. Nous ne sommes pas responsable pour les informations non actuelles ou inadequates. </i></p>
 
 
 
 
-<p> <i><b>Impressum</b>:
+<p> <i><h3>Impressum</h3>:
     Cyril Dechamps,
     Postfach (coming soon),
     69115 Heidelberg
